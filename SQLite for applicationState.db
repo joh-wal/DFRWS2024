@@ -3,4 +3,4 @@ sqliteQ ="select application_identifier_tab.application_identifier, kvs.value fr
 
 
 
-"SELECT url, title, datetime(visit_date/1000000,'unixepoch') AS TimeStamp FROM moz_historyvisits, moz_places WHERE moz_historyvisits.place_id = moz_places.id;"
+
