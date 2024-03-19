@@ -2,4 +2,4 @@ Here you can find the exercise files and code snippets for: DFRWS EU 2024 Worksh
 
 If you are having issues please let me know!
 
-johan.wallengren _.~at~._ hh.se
+johan . wallengren _.=at=._ hh . se
