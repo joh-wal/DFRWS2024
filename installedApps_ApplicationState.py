@@ -1,9 +1,13 @@
+# This script was never covered during the workshop because we ran out of time
+# This scirpt will use data inside "applicationState.db" to get a list of installed applications and its path/sandbox
+# Be aware that this is not a complete list as it does not include data in shared appgroups (/private/var/mobile/Containers/Shared/AppGroup/)
+
 import zipfile
 import pathlib
 import sqlite3
 import biplist
-import NSKeyedUnArchiver
-from tabulate import tabulate
+import NSKeyedUnArchiver #needs to be installed
+from tabulate import tabulate #needs to be installed
 
 zipFilePath = "Magnet CTF 2022 iOS subset minimal.zip"
 
@@ -51,4 +55,3 @@ for row in sqliteResult2:
     listApps.append(appInfo)
 
 print(tabulate(listApps, headers=["App Name", " Sandbox Path", "BundleID"]))
-openZipFile.close()
