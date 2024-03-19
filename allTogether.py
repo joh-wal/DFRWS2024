@@ -1,5 +1,6 @@
-import zipfile
+# In this script we will combine what we learned so far and get some text out from a note created on iOS
 
+import zipfile
 import pathlib
 import sqlite3
 import gzip
@@ -9,8 +10,6 @@ zipFilePath = "Magnet CTF 2022 iOS subset minimal.zip"
 tempFolder = "temp"
 
 fileNameToSearch = "NoteStore.sqlite"
-
-
 
 with zipfile.ZipFile(zipFilePath, "r") as openZipFile:
     for fileName in openZipFile.namelist():
