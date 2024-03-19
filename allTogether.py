@@ -53,4 +53,3 @@ print(decodedProtobufBLOB)
 print("\nText inside note:")
 print(decodedProtobufBLOB[0]['2']['3']['2'].decode("utf-8"))
 
-openZipFile.close()
